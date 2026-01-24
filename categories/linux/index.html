@@ -157,9 +157,9 @@
 									
 							<ul>
 								<li class="file">
-									<a href="/2026/01/24/linux/ip%E5%BD%92%E5%B1%9E/" title="/2026/01/24/linux/ip归属">
+									<a href="/2026/01/24/linux/ipmitool/" title="/2026/01/24/linux/ipmitool">
 									
-										ip归属
+										ipmitool
 									
 									</a>
 								</li>
@@ -168,9 +168,9 @@
 			
 							<ul>
 								<li class="file">
-									<a href="/2026/01/24/linux/ipmitool/" title="/2026/01/24/linux/ipmitool">
+									<a href="/2026/01/24/linux/ip%E5%BD%92%E5%B1%9E/" title="/2026/01/24/linux/ip归属">
 									
-										ipmitool
+										ip归属
 									
 									</a>
 								</li>
@@ -188,13 +188,15 @@
 		<div id="index">
 	
 	<div class="index-li">
-		<a href="/2026/01/24/linux/ip%E5%BD%92%E5%B1%9E/">
+		<a href="/2026/01/24/linux/ipmitool/">
 			<h2 class="index-title">
-				IP归属API
+				ipmitool
 			</h2>
 			<div class="index-brief">
-				curl -sSfL https://api.live.bilibili.com/xlive/web-room/v1/index/getIpInfocurl -sSfL https://i.news.qq.com/api/ip2citycurl -sSfL https://db-ip.com/demo/home.php?s=
- ...
+				风扇控制设置风扇为手动模式并控制转速，同时查看温度传感器信息。
+&#123;    # 确保处于手动模式    ipmitool raw 0x30 0x30 0x01 0x00    # 设置所有风扇到 1%    ipmitool raw 0x30 0x30 0x02 0xff 0x01&#125;
+
+温度传感器&#123;    ipmitool sdr list |grep temp -i& ...
 			</div>
 		</a>
 		<div class="article-meta">
@@ -212,15 +214,13 @@
 	</div>
 	
 	<div class="index-li">
-		<a href="/2026/01/24/linux/ipmitool/">
+		<a href="/2026/01/24/linux/ip%E5%BD%92%E5%B1%9E/">
 			<h2 class="index-title">
-				ipmitool
+				IP归属API
 			</h2>
 			<div class="index-brief">
-				风扇控制设置风扇为手动模式并控制转速，同时查看温度传感器信息。
-&#123;    # 确保处于手动模式    ipmitool raw 0x30 0x30 0x01 0x00    # 设置所有风扇到 1%    ipmitool raw 0x30 0x30 0x02 0xff 0x01&#125;
-
-温度传感器&#123;    ipmitool sdr list |grep temp -i& ...
+				curl -sSfL https://api.live.bilibili.com/xlive/web-room/v1/index/getIpInfocurl -sSfL https://i.news.qq.com/api/ip2citycurl -sSfL https://db-ip.com/demo/home.php?s=
+ ...
 			</div>
 		</a>
 		<div class="article-meta">
