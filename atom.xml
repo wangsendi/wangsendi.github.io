@@ -6,7 +6,7 @@
   <link href="https://blog.sendi.wang/atom.xml" rel="self"/>
   
   <link href="https://blog.sendi.wang/"/>
-  <updated>2026-01-24T17:49:21.688Z</updated>
+  <updated>2026-01-24T17:59:50.237Z</updated>
   <id>https://blog.sendi.wang/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IP归属API</title>
+    <link href="https://blog.sendi.wang/2026/01/24/linux/ip%E5%BD%92%E5%B1%9E/"/>
+    <id>https://blog.sendi.wang/2026/01/24/linux/ip%E5%BD%92%E5%B1%9E/</id>
+    <published>2026-01-24T09:37:16.000Z</published>
+    <updated>2026-01-24T17:59:50.237Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -sSfL https://api.live.bilibili.com/xlive/web-room/v1/index/getIpInfo</span><br><span class="line">curl -sSfL https://i.news.qq.com/api/ip2city</span><br><span class="line">curl -sSfL https://db-ip.com/demo/home.php?s=</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</summary>
+      
+    
+    
+    
+    <category term="linux" scheme="https://blog.sendi.wang/categories/linux/"/>
+    
+    
+    <category term="IP" scheme="https://blog.sendi.wang/tags/IP/"/>
+    
+    <category term="归属地" scheme="https://blog.sendi.wang/tags/%E5%BD%92%E5%B1%9E%E5%9C%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>ipmitool</title>

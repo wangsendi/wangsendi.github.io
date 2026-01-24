@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>IP归属API</title>
+      <link href="/2026/01/24/linux/ip%E5%BD%92%E5%B1%9E/"/>
+      <url>/2026/01/24/linux/ip%E5%BD%92%E5%B1%9E/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -sSfL https://api.live.bilibili.com/xlive/web-room/v1/index/getIpInfo</span><br><span class="line">curl -sSfL https://i.news.qq.com/api/ip2city</span><br><span class="line">curl -sSfL https://db-ip.com/demo/home.php?s=</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IP </tag>
+            
+            <tag> 归属地 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ipmitool</title>
       <link href="/2026/01/24/linux/ipmitool/"/>
       <url>/2026/01/24/linux/ipmitool/</url>

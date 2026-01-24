@@ -8,7 +8,7 @@
 	
 <title>
     
-        tags&nbsp;&nbsp;✦&nbsp;
+        IP归属API&nbsp;&nbsp;✦&nbsp;
     
     成熟苦瓜
 </title>
@@ -18,9 +18,10 @@
 
 <meta name="author" content="wangsendi" />
 
-<meta name="keywords" content="" />
+<meta name="keywords" content="IP,归属地,linux" />
 
-<meta name="description" content="" />
+<meta name="description" content="curl -sSfL https://api.live.bilibili.com/xlive/web-room/v1/index/getIpInfocurl -sSfL https://i.news.qq.com/api/ip2citycurl -sSfL https://db-ip.com/demo/home.php?s=
+" />
 
 	<!-- favicon -->
 	
@@ -158,7 +159,7 @@
 			
 									
 							<ul>
-								<li class="file">
+								<li class="file active">
 									<a href="/2026/01/24/linux/ip%E5%BD%92%E5%B1%9E/" title="/2026/01/24/linux/ip归属">
 									
 										ip归属
@@ -188,49 +189,166 @@
 
 	<div id="content">
 		<h1 id="article-title">
-	<i class="fa fa-tags" aria-hidden="true"></i>标签
+	IP归属API
 </h1>
-<h2 id="article-title">
-	目前共计 4 个标签
-</h2>
+
+<div class="article-meta">
+	<span> wangsendi </span>
+	<span> 2026-01-24 17:37:16 </span>
+	<div id="article-categories">
+		
+			<span>Categories：</span>
+			
+				
+				<span>
+					<i class="fa fa-folder" aria-hidden="true">
+						<a href="/categories/linux/">
+							linux
+						</a>
+					</i>
+				
+				</span>
+				
+			
+		
+		
+			<span>Tags：</span>
+			
+				
+					<span>
+						<i class="fa fa-tag" aria-hidden="true">
+							<a href="/tags/IP/">
+								IP
+							</a>
+						</i>
+					</span>
+				
+			
+				
+					<span>
+						<i class="fa fa-tag" aria-hidden="true">
+							<a href="/tags/归属地/">
+								归属地
+							</a>
+						</i>
+					</span>
+				
+			
+		
+	</div>
+</div>
 
 <div id="article-content">
-	<ul>
-      
-          
-            <li class="menu-item">
-                <span>
-                      <a href="/tags/IP/">IP(1)</a>
-                </span>
-            </li>
-          
-      
-          
-            <li class="menu-item">
-                <span>
-                      <a href="/tags/归属地/">归属地(1)</a>
-                </span>
-            </li>
-          
-      
-          
-            <li class="menu-item">
-                <span>
-                      <a href="/tags/ipmitool/">ipmitool(1)</a>
-                </span>
-            </li>
-          
-      
-          
-            <li class="menu-item">
-                <span>
-                      <a href="/tags/目录/">目录(1)</a>
-                </span>
-            </li>
-          
-      
-	</ul>
+	<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -sSfL https://api.live.bilibili.com/xlive/web-room/v1/index/getIpInfo</span><br><span class="line">curl -sSfL https://i.news.qq.com/api/ip2city</span><br><span class="line">curl -sSfL https://db-ip.com/demo/home.php?s=</span><br></pre></td></tr></table></figure>
+
+	
 </div>
+
+
+    
+
+    
+
+    
+        
+        <script async reload>
+            fetch("https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/tokyo-night-dark.css")
+                .then((response) => response.text())
+                .then((cssContent) => {
+                    const style = document.createElement("style");
+                    
+                        cssContent = cssContent
+                            .replace(".hljs-code,", "")
+                            .replaceAll("_", " ")
+                            .replaceAll("hljs-", "hljs .")
+                            .replaceAll(".hljs", " .highlight")
+                            .replaceAll(".built in", ".built_in")
+                            .replaceAll("title.", "");
+                        const figures = document.querySelectorAll("figure.highlight td.gutter");
+                        figures.forEach(figure=>{
+                            figure.classList.add("highlight");
+                        })
+                    
+                    style.innerHTML = cssContent;
+                    document.head.appendChild(style);
+                })
+                .catch((error) => {
+                    console.error("Error loading CSS:", error);
+                });
+        </script>
+    
+
+
+
+
+
+    <script reload>
+        var targets = document.querySelectorAll("figure.highlight, #article-content > pre:not(.highlight,.hljs)");
+        targets.forEach((block) => {
+            const copyBtn = document.createElement("button");
+            copyBtn.innerHTML = `<i class="fa fa-clone" aria-hidden="true"></i>`;
+            copyBtn.className = "code-copy";
+
+            
+                copyBtn.style.color = "#fff";
+            
+
+            copyBtn.addEventListener("click", () => {
+                const text = block.querySelector("td.code")?.textContent || block.querySelector("code")?.textContent;
+                navigator.clipboard.writeText(text).then(() => {
+                    copyBtn.innerHTML = "Copied!";
+                    setTimeout(() => {
+                        copyBtn.innerHTML = `<i class="fa fa-clone" aria-hidden="true"></i>`;
+                    }, 2000);
+                });
+            });
+            block.appendChild(copyBtn);
+        });
+    </script>
+
+
+
+
+<div class="post-guide">
+	<div class="item left">
+	
+		<a href="/2026/01/24/linux/linux/">
+			<i class="fa fa-angle-left" aria-hidden="true"></i>
+			linux
+		</a>
+	
+	</div>
+	<div class="item right">
+		
+		<a href="/2026/01/24/linux/ipmitool/">
+			ipmitool
+			<i class="fa fa-angle-right" aria-hidden="true"></i>
+		</a>
+		
+	</div>
+</div>
+
+
+
+	<div id="comment">
+		<script reload src="https://giscus.app/client.js"
+			data-repo="wangsendi/wangsendi.github.io"
+			data-repo-id="R_kgDON9z2HQ"
+			data-category="Announcements"
+			data-category-id="DIC_kwDON9z2Hc4C1W2p"
+			data-mapping="pathname"
+			data-strict="0"
+			data-reactions-enabled="1"
+			data-emit-metadata="0"
+			data-input-position="top"
+			data-theme="preferred_color_scheme"
+			data-lang="zh-CN"
+			crossorigin="anonymous"
+			async>
+		</script>
+	</div>
+
+
 	</div>
 
 	<div id="footer">
