@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>ipmi</title>
+      <link href="/2026/01/24/linux/ipmitool/"/>
+      <url>/2026/01/24/linux/ipmitool/</url>
+      
+        <content type="html"><![CDATA[<h2 id="风扇控制"><a href="#风扇控制" class="headerlink" title="风扇控制"></a>风扇控制</h2><p>设置风扇为手动模式并控制转速，同时查看温度传感器信息。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="comment"># 确保处于手动模式</span></span><br><span class="line">    ipmitool raw 0x30 0x30 0x01 0x00</span><br><span class="line">    <span class="comment"># 设置所有风扇到 1%</span></span><br><span class="line">    ipmitool raw 0x30 0x30 0x02 0xff 0x01</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="温度传感器"><a href="#温度传感器" class="headerlink" title="温度传感器"></a>温度传感器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    ipmitool sdr list |grep temp -i</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="IPMI-网络配置"><a href="#IPMI-网络配置" class="headerlink" title="IPMI 网络配置"></a>IPMI 网络配置</h2><p>配置 IPMI 网络接口为静态 IP 地址。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    ipmitool lan <span class="built_in">set</span> 1 ipsrc static</span><br><span class="line">    ipmitool lan <span class="built_in">set</span> 1 ipaddr 192.168.0.11</span><br><span class="line">    ipmitool lan <span class="built_in">set</span> 1 netmask 255.255.255.0</span><br><span class="line">    ipmitool lan <span class="built_in">set</span> 1 defgw ipaddr 192.168.0.1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ipmitool </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>服务器目录</title>
+      <link href="/2026/01/24/linux/linux/"/>
+      <url>/2026/01/24/linux/linux/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 目录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
