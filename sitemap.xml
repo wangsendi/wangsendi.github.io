@@ -4,7 +4,7 @@
   <url>
     <loc>https://blog.sendi.wang/2026/01/24/linux/ip%E5%BD%92%E5%B1%9E/</loc>
     
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-26</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,7 +58,7 @@
 
   <url>
     <loc>https://blog.sendi.wang/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,28 +66,28 @@
   
   <url>
     <loc>https://blog.sendi.wang/tags/ipmitool/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.sendi.wang/tags/IP/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.sendi.wang/tags/%E5%BD%92%E5%B1%9E%E5%9C%B0/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.sendi.wang/tags/%E7%9B%AE%E5%BD%95/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -96,7 +96,7 @@
   
   <url>
     <loc>https://blog.sendi.wang/categories/linux/</loc>
-    <lastmod>2026-01-24</lastmod>
+    <lastmod>2026-01-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
