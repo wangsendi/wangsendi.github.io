@@ -157,6 +157,17 @@
 									
 							<ul>
 								<li class="file">
+									<a href="/2026/01/24/linux/ipmitool/" title="/2026/01/24/linux/ipmitool">
+									
+										ipmitool
+									
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2026/01/24/linux/ip%E5%BD%92%E5%B1%9E/" title="/2026/01/24/linux/ip归属">
 									
 										ip归属
@@ -168,9 +179,9 @@
 			
 							<ul>
 								<li class="file">
-									<a href="/2026/01/24/linux/ipmitool/" title="/2026/01/24/linux/ipmitool">
+									<a href="/2026/01/24/linux/%E7%83%AD%E6%8B%94%E6%8F%92%20NVMe%20%E7%A3%81%E7%9B%98/" title="/2026/01/24/linux/热拔插 NVMe 磁盘">
 									
-										ipmitool
+										热拔插 NVMe 磁盘
 									
 									</a>
 								</li>
@@ -186,6 +197,32 @@
 
 	<div id="content">
 		<div id="index">
+	
+	<div class="index-li">
+		<a href="/2026/01/24/linux/ipmitool/">
+			<h2 class="index-title">
+				ipmitool
+			</h2>
+			<div class="index-brief">
+				风扇控制设置风扇为手动模式并控制转速，同时查看温度传感器信息。
+&#123;    # 确保处于手动模式    ipmitool raw 0x30 0x30 0x01 0x00    # 设置所有风扇到 1%    ipmitool raw 0x30 0x30 0x02 0xff 0x01&#125;
+
+温度传感器&#123;    ipmitool sdr list |grep temp -i& ...
+			</div>
+		</a>
+		<div class="article-meta">
+			<span>2026-01-24</span>
+			  
+			<span>
+				<i class="fa fa-folder" aria-hidden="true"></i>
+				<a href="/categories/linux/"
+					>linux</a
+				>
+				
+			</span>
+			  
+		</div>
+	</div>
 	
 	<div class="index-li">
 		<a href="/2026/01/24/linux/ip%E5%BD%92%E5%B1%9E/">
@@ -213,15 +250,19 @@
 	</div>
 	
 	<div class="index-li">
-		<a href="/2026/01/24/linux/ipmitool/">
+		<a href="/2026/01/24/linux/%E7%83%AD%E6%8B%94%E6%8F%92%20NVMe%20%E7%A3%81%E7%9B%98/">
 			<h2 class="index-title">
-				ipmitool
+				热拔插 NVMe 磁盘
 			</h2>
 			<div class="index-brief">
-				风扇控制设置风扇为手动模式并控制转速，同时查看温度传感器信息。
-&#123;    # 确保处于手动模式    ipmitool raw 0x30 0x30 0x01 0x00    # 设置所有风扇到 1%    ipmitool raw 0x30 0x30 0x02 0xff 0x01&#125;
+				解绑 NVMe 设备查看设备 PCI 地址：
+readlink /sys/class/nvme/nvme3/device# 输出类似: ../../../0000:82:00.0
 
-温度传感器&#123;    ipmitool sdr list |grep temp -i& ...
+解绑设备：
+echo &#x27;0000:82:00.0&#x27; &gt; /sys/bus/pci/drivers/nvme/unbind
+
+重新绑定扫描 PCI 总线：
+echo 1 &gt; /sys/bu ...
 			</div>
 		</a>
 		<div class="article-meta">
