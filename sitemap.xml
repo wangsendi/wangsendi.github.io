@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sendi.wang/tags/index.html</loc>
+    <loc>https://blog.sendi.wang/categories/index.html</loc>
     
     <lastmod>2026-01-24</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blog.sendi.wang/categories/index.html</loc>
+    <loc>https://blog.sendi.wang/tags/index.html</loc>
     
     <lastmod>2026-01-24</lastmod>
     
@@ -81,6 +81,13 @@
   </url>
   
   <url>
+    <loc>https://blog.sendi.wang/tags/%E7%9B%AE%E5%BD%95/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.sendi.wang/tags/IP/</loc>
     <lastmod>2026-01-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -89,13 +96,6 @@
   
   <url>
     <loc>https://blog.sendi.wang/tags/%E5%BD%92%E5%B1%9E%E5%9C%B0/</loc>
-    <lastmod>2026-01-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.sendi.wang/tags/%E7%9B%AE%E5%BD%95/</loc>
     <lastmod>2026-01-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

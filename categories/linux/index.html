@@ -255,14 +255,14 @@
 				热拔插 NVMe 磁盘
 			</h2>
 			<div class="index-brief">
-				解绑 NVMe 设备查看设备 PCI 地址：
+				解绑 NVMe 设备(临时)查看设备 PCI 地址：
 readlink /sys/class/nvme/nvme3/device# 输出类似: ../../../0000:82:00.0
 
 解绑设备：
 echo &#x27;0000:82:00.0&#x27; &gt; /sys/bus/pci/drivers/nvme/unbind
 
 重新绑定扫描 PCI 总线：
-echo 1 &gt; /sys/bu ...
+echo 1 &gt; /sy ...
 			</div>
 		</a>
 		<div class="article-meta">
