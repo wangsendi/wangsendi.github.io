@@ -8,6 +8,8 @@
 	
 <title>
     
+        tc网卡限速&nbsp;&nbsp;✦&nbsp;
+    
     成熟苦瓜
 </title>
 
@@ -16,9 +18,9 @@
 
 <meta name="author" content="wangsendi" />
 
-<meta name="keywords" content="" />
+<meta name="keywords" content="tc,linux" />
 
-<meta name="description" content="" />
+<meta name="description" content="设置限速#!/usr/bin/env bash&amp;#123;	tc qdisc del dev eth0 root 2&amp;gt;/dev/null	tc qdisc add dev eth0 root handle 1: htb default 10	tc class add dev eth0 parent 1: classid 1:1 htb rate 1000mbit ceil 1000mbit	" />
 
 	<!-- favicon -->
 	
@@ -189,7 +191,7 @@
 							</ul>
 			
 							<ul>
-								<li class="file">
+								<li class="file active">
 									<a href="/2026/02/05/linux/tc%E7%BD%91%E5%8D%A1%E9%99%90%E9%80%9F/" title="/2026/02/05/linux/tc网卡限速">
 									
 										tc网卡限速
@@ -207,28 +209,153 @@
 </div>
 
 	<div id="content">
-		<div id="index">
-	
-	<div class="index-li">
-		<a href="/2026/01/24/linux/linux/">
-			<h2 class="index-title">
-				linux
-			</h2>
-			<div class="index-brief">
-				 ...
-			</div>
-		</a>
-		<div class="article-meta">
-			<span>2026-01-24</span>
-			  
-		</div>
-	</div>
-	
+		<h1 id="article-title">
+	tc网卡限速
+</h1>
 
-	<div id="index-paginator">
+<div class="article-meta">
+	<span> wangsendi </span>
+	<span> 2026-02-05 00:00:00 </span>
+	<div id="article-categories">
+		
+			<span>Categories：</span>
+			
+				
+				<span>
+					<i class="fa fa-folder" aria-hidden="true">
+						<a href="/categories/linux/">
+							linux
+						</a>
+					</i>
+				
+				</span>
+				
+			
+		
+		
+			<span>Tags：</span>
+			
+				
+					<span>
+						<i class="fa fa-tag" aria-hidden="true">
+							<a href="/tags/tc/">
+								tc
+							</a>
+						</i>
+					</span>
+				
+			
 		
 	</div>
 </div>
+
+<div id="article-content">
+	<h2 id="设置限速"><a href="#设置限速" class="headerlink" title="设置限速"></a>设置限速</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/env bash</span></span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">	tc qdisc del dev eth0 root 2&gt;/dev/null</span><br><span class="line">	tc qdisc add dev eth0 root handle 1: htb default 10</span><br><span class="line"></span><br><span class="line">	tc class add dev eth0 parent 1: classid 1:1 htb rate 1000mbit ceil 1000mbit</span><br><span class="line">	tc class add dev eth0 parent 1:1 classid 1:10 htb rate 1000mbit ceil 1000mbit</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="删除限速"><a href="#删除限速" class="headerlink" title="删除限速"></a>删除限速</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tc qdisc del dev eth0 root 2&gt;/dev/null</span><br></pre></td></tr></table></figure>
+
+	
+</div>
+
+
+    
+
+    
+
+    
+        
+        <script async reload>
+            fetch("https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/tokyo-night-dark.css")
+                .then((response) => response.text())
+                .then((cssContent) => {
+                    const style = document.createElement("style");
+                    
+                        cssContent = cssContent
+                            .replace(".hljs-code,", "")
+                            .replaceAll("_", " ")
+                            .replaceAll("hljs-", "hljs .")
+                            .replaceAll(".hljs", " .highlight")
+                            .replaceAll(".built in", ".built_in")
+                            .replaceAll("title.", "");
+                        const figures = document.querySelectorAll("figure.highlight td.gutter");
+                        figures.forEach(figure=>{
+                            figure.classList.add("highlight");
+                        })
+                    
+                    style.innerHTML = cssContent;
+                    document.head.appendChild(style);
+                })
+                .catch((error) => {
+                    console.error("Error loading CSS:", error);
+                });
+        </script>
+    
+
+
+
+
+
+    <script reload>
+        var targets = document.querySelectorAll("figure.highlight, #article-content > pre:not(.highlight,.hljs)");
+        targets.forEach((block) => {
+            const copyBtn = document.createElement("button");
+            copyBtn.innerHTML = `<i class="fa fa-clone" aria-hidden="true"></i>`;
+            copyBtn.className = "code-copy";
+
+            
+                copyBtn.style.color = "#fff";
+            
+
+            copyBtn.addEventListener("click", () => {
+                const text = block.querySelector("td.code")?.textContent || block.querySelector("code")?.textContent;
+                navigator.clipboard.writeText(text).then(() => {
+                    copyBtn.innerHTML = "Copied!";
+                    setTimeout(() => {
+                        copyBtn.innerHTML = `<i class="fa fa-clone" aria-hidden="true"></i>`;
+                    }, 2000);
+                });
+            });
+            block.appendChild(copyBtn);
+        });
+    </script>
+
+
+
+
+<div class="post-guide">
+	<div class="item left">
+	
+		<a href="/2026/01/24/linux/%E7%83%AD%E6%8B%94%E6%8F%92%20NVMe%20%E7%A3%81%E7%9B%98/">
+			<i class="fa fa-angle-left" aria-hidden="true"></i>
+			热拔插 NVMe 磁盘
+		</a>
+	
+	</div>
+	<div class="item right">
+		
+	</div>
+</div>
+
+
+
+	<div id="comment">
+		<script reload src="https://giscus.app/client.js"
+			data-repo="wangsendi/wangsendi.github.io"
+			data-repo-id="R_kgDON9z2HQ"
+			data-category="Announcements"
+			data-category-id="DIC_kwDON9z2Hc4C1W2p"
+			data-mapping="pathname"
+			data-strict="0"
+			data-reactions-enabled="1"
+			data-emit-metadata="0"
+			data-input-position="top"
+			data-theme="preferred_color_scheme"
+			data-lang="zh-CN"
+			crossorigin="anonymous"
+			async>
+		</script>
+	</div>
+
 
 	</div>
 

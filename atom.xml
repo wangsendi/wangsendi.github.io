@@ -6,7 +6,7 @@
   <link href="https://blog.sendi.wang/atom.xml" rel="self"/>
   
   <link href="https://blog.sendi.wang/"/>
-  <updated>2026-01-27T06:12:52.412Z</updated>
+  <updated>2026-02-05T09:25:21.809Z</updated>
   <id>https://blog.sendi.wang/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>tc网卡限速</title>
+    <link href="https://blog.sendi.wang/2026/02/05/linux/tc%E7%BD%91%E5%8D%A1%E9%99%90%E9%80%9F/"/>
+    <id>https://blog.sendi.wang/2026/02/05/linux/tc%E7%BD%91%E5%8D%A1%E9%99%90%E9%80%9F/</id>
+    <published>2026-02-04T16:00:00.000Z</published>
+    <updated>2026-02-05T09:25:21.809Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="设置限速"><a href="#设置限速" class="headerlink" title="设置限速"></a>设置限速</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/env bash</span></span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">tc qdisc del dev eth0 root 2&gt;/dev/null</span><br><span class="line">tc qdisc add dev eth0 root handle 1: htb default 10</span><br><span class="line"></span><br><span class="line">tc class add dev eth0 parent 1: classid 1:1 htb rate 1000mbit ceil 1000mbit</span><br><span class="line">tc class add dev eth0 parent 1:1 classid 1:10 htb rate 1000mbit ceil 1000mbit</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="删除限速"><a href="#删除限速" class="headerlink" title="删除限速"></a>删除限速</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tc qdisc del dev eth0 root 2&gt;/dev/null</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;设置限速&quot;&gt;&lt;a href=&quot;#设置限速&quot; class=&quot;headerlink&quot; title=&quot;设置限速&quot;&gt;&lt;/a&gt;设置限速&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre</summary>
+      
+    
+    
+    
+    <category term="linux" scheme="https://blog.sendi.wang/categories/linux/"/>
+    
+    
+    <category term="tc" scheme="https://blog.sendi.wang/tags/tc/"/>
+    
+  </entry>
   
   <entry>
     <title>ipmitool</title>

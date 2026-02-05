@@ -188,6 +188,17 @@
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2026/02/05/linux/tc%E7%BD%91%E5%8D%A1%E9%99%90%E9%80%9F/" title="/2026/02/05/linux/tc网卡限速">
+									
+										tc网卡限速
+									
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 							</ul>
 			
@@ -197,6 +208,29 @@
 
 	<div id="content">
 		<div id="index">
+	
+	<div class="index-li">
+		<a href="/2026/02/05/linux/tc%E7%BD%91%E5%8D%A1%E9%99%90%E9%80%9F/">
+			<h2 class="index-title">
+				tc网卡限速
+			</h2>
+			<div class="index-brief">
+				设置限速#!/usr/bin/env bash&#123;	tc qdisc del dev eth0 root 2&gt;/dev/null	tc qdisc add dev eth0 root handle 1: htb default 10	tc class add dev eth0 parent 1: classid 1:1 htb rate 1000mbit ceil 1000mbit	 ...
+			</div>
+		</a>
+		<div class="article-meta">
+			<span>2026-02-05</span>
+			  
+			<span>
+				<i class="fa fa-folder" aria-hidden="true"></i>
+				<a href="/categories/linux/"
+					>linux</a
+				>
+				
+			</span>
+			  
+		</div>
+	</div>
 	
 	<div class="index-li">
 		<a href="/2026/01/24/linux/ipmitool/">
